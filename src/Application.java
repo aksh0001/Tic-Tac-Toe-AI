@@ -36,6 +36,7 @@ public class Application extends JFrame implements ActionListener {
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
+                // Global Exception handler
                 try {
                     Application frame = new Application();
                     frame.setVisible(true);
@@ -267,7 +268,7 @@ public class Application extends JFrame implements ActionListener {
             if (TTT.move(sender.Field, 1) && GO == 0) {
                 sender.setForeground(Color.GREEN);
                 sender.setText("X");
-                ComputerMove(-1, Color.RED, 0);
+                ComputerMove(-1, Color.ORANGE, 0);
                 if ((GO = TTT.isGameOver()) != 0)
                     SetCounters(GO);
             }
@@ -298,7 +299,7 @@ public class Application extends JFrame implements ActionListener {
             if ((p % 2) == 0) {
                 ComputerMove(1, Color.GREEN, 0);
             } else {
-                ComputerMove(-1, Color.RED, 0);
+                ComputerMove(-1, Color.ORANGE, 0);
 
             }
             GO = TTT.isGameOver();
