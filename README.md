@@ -1,2 +1,2 @@
 # Tic-Tac-Toe-AI
-A tic tac toe game using the minimax algorithm
+A tic tac toe AI agent, complete with UI. Made using the minimax algorithm.
